@@ -1,0 +1,128 @@
+/*
+#navbar {
+	position: fixed;
+	top: 0;
+	width:100%;
+	z-index: 1;
+}
+
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #be3144;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+}
+
+#navbar li {
+	float: left;
+}
+
+#navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#navbar li a:hover {
+	background-color: #7065ad;
+}
+
+@media (max-width:500px) {
+	#about-section {
+		color: red;
+	}
+}
+
+main {
+	margin-top: 40px
+}
+
+#about-section {
+	background-color: #000;
+	height: 50vh;
+	background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+	font-family: 'Raleway', sans-serif;
+}
+
+#projects {
+	background-color: blue;
+	height: 100vh;
+}
+
+#contact {
+	background-color: blue;
+	height: 100vh;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div .content {
+	text-align: center;
+	padding-top: 4%;
+	font-size: 130%;
+}
+
+div #input {
+	width: 80%;
+	height: 12vh;
+	outline: none;
+	border: 2px solid orange;
+	display: block;
+	margin-top: 3%;
+	margin-left: 10%;
+	padding-left: 2%;
+}
+
+div button {
+	display: block;
+	color: white;
+	font-weight: bold;
+	background-color: Orange;
+	border: none;
+	width: 18.5%;
+	height: 7vh;
+	margin-left: 40%;
+	margin-top: 3%;
+	border-radius: 5px;
+	font-size: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+div button:hover {
+	border: 2.5px solid orange;
+}
+
+div h4 {
+	margin-top: 2%;
+	text-align: center;
+	font-size: 130%;
+}
+
+div #message {
+	color: orange;
+	text-align: center;
+	margin-top: 3%;
+	color: green;
+	font-size: 150%;
+}
+
+.content-container {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+}
+*/
+
+
