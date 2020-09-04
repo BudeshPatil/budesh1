@@ -26,15 +26,15 @@
 
 	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-		<a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-		<a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+		<a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+		<a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECT</a>
 		<a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
 		<a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 	</div>
 
 	<!-- Page content -->
 	<div class="w3-content" style="max-width:2000px;margin-top:46px">
-		<!-- The Band Section -->
+		<!-- The About Section -->
 
 		<div class="w3-black" id="about">
 			<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:100%;background-color: darkslategray">
@@ -45,7 +45,7 @@
 			</div>
 		</div>
 
-		<!-- The Tour Section -->
+		<!-- The Project Section -->
 		<div class="w3-black" id="project">
 			<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
 				<h2 class="w3-wide w3-center">These are some of my projects</h2>
@@ -73,7 +73,7 @@
 						<img src="img/fizzio.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
 						<div class="w3-container w3-white">
 							<p><b>Fizzio</b></p>
-							<p class="w3-opacity">Sun 29 Nov 2016</p>
+							<p class="w3-opacity">Sun 29 Mar 2020</p>
 							<p><strong>Tools:</strong> HTML, CSS, java and MySql</p>
 							<a class="w3-button w3-black w3-margin-bottom" href="https://oneriskgroup.com/" target="_blank">Read More</a>
 						</div>
@@ -82,11 +82,11 @@
 			</div>
 		</div>
 
-		<!-- Ticket Modal -->
-		<div id="ticketModal" class="w3-modal">
+		<!-- my Modal -->
+		<div id="myModal" class="w3-modal">
 			<div class="w3-modal-content w3-animate-top w3-card-4">
 				<header class="w3-container w3-teal w3-center w3-padding-32">
-					<span onclick="document.getElementById('ticketModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+					<span onclick="document.getElementById('myModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
 					<h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
 				</header>
 				<div class="w3-container">
@@ -95,7 +95,7 @@
 					<p><label><i class="fa fa-user"></i> Send To</label></p>
 					<input class="w3-input w3-border" type="text" placeholder="Enter email">
 					<button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-					<button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+					<button class="w3-button w3-red w3-section" onclick="document.getElementById('myModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
 					<p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
 				</div>
 			</div>
