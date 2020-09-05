@@ -46,10 +46,10 @@ function csvParse(inputString) {
 	var feb = JSON.parse(res2018);
 	if(feb){
 		nameList = "<li>" + '2018' + "</li>";
+		document.getElementById("output").innerHTML +=nameList;
+		nameList = "<pre style='margin-left:50px'><li style='list-style-type:circle'>" + 'feb' + "</li></pre>";
 		document.getElementById("output").innerHTML += nameList;
-		nameList = "<li>" + 'feb' + "</li>";
-		document.getElementById("output").innerHTML += nameList;
-		nameList = "<li>" + feb.feb[0] + "</li>";
+		nameList = "<pre style='margin-left:100px'><li>" + feb.feb[0] + "</li></pre>";
 		document.getElementById("output").innerHTML += nameList;
 	}
 	
@@ -60,31 +60,31 @@ function csvParse(inputString) {
 	if(jan){
 		nameList = "<li>" + '2019' + "</li>";
 		document.getElementById("output").innerHTML += nameList;
-		nameList = "<li>" + 'jan' + "</li>";
+		nameList = "<pre style='margin-left:50px'><li style='list-style-type:circle'>" + 'jan' + "</li></pre>";
 		document.getElementById("output").innerHTML += nameList;
 		if(jan.jan[3]){
-			nameList = "<li>" + '3' + "</li>";
+			nameList = "<pre style='margin-left:100px'><li>" + '3' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
-			nameList = "<li>" + 'folder1' + "</li>";
+			nameList = "<pre style='margin-left:150px'><li>" + 'folder1' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
-			nameList = "<li>" + 'subfolder1' + "</li>";
+			nameList = "<pre style='margin-left:200px'><li>" + 'subfolder1' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
 			for(var I = 0; I < jan.jan[3].folder1.subfolder1.length; I++){
-				nameList = "<li>" + jan.jan[3].folder1.subfolder1[I] + "</li>";
+				nameList = "<pre style='margin-left:250px'><li>" + jan.jan[3].folder1.subfolder1[I] + "</li></pre>";
 				document.getElementById("output").innerHTML += nameList
 			}
-			nameList = "<li>" + 'js' + "</li>";
+			nameList = "<pre style='margin-left:250px'><li>" + 'js' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
 		}
 		if(jan.jan[5]){
-			nameList = "<li>" + '5' + "</li>";
+			nameList = "<pre style='margin-left:100px'><li>" + '5' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
-			nameList = "<li>" + 'folder1' + "</li>";
+			nameList = "<pre style='margin-left:150px'><li>" + 'folder1' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
-			nameList = "<li>" + 'subfolder1' + "</li>";
+			nameList = "<pre style='margin-left:200px'><li>" + 'subfolder1' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
 			for(var I = 0; I < jan.jan[5].folder1.subfolder1.length; I++){
-				nameList = "<li>" + jan.jan[5].folder1.subfolder1[I] + "</li>";
+				nameList = "<pre style='margin-left:250px'><li>" + jan.jan[5].folder1.subfolder1[I] + "</li></pre>";
 				document.getElementById("output").innerHTML += nameList
 			}
 		}
@@ -93,16 +93,16 @@ function csvParse(inputString) {
 	var resMar = '{"mar' + res2019.split(",\"mar")[1];
 	var mar = JSON.parse(resMar);
 		if(mar){
-			nameList = "<li>" + 'mar' + "</li>";
+			nameList = "<pre style='margin-left:50px'><li style='list-style-type:circle'>" + 'mar' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
-			nameList = "<li>" + '15' + "</li>";
+			nameList = "<pre style='margin-left:100px'><li>" + '15' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
-			nameList = "<li>" + 'folder1' + "</li>";
+			nameList = "<pre style='margin-left:150px'><li>" + 'folder1' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
-			nameList = "<li>" + 'subfolder1' + "</li>";
+			nameList = "<pre style='margin-left:200px'><li>" + 'subfolder1' + "</li></pre>";
 			document.getElementById("output").innerHTML += nameList;
 			for(var I = 0; I < mar.mar[15].folder1.subfolder1.length; I++){
-				nameList = "<li>" + mar.mar[15].folder1.subfolder1[I] + "</li>";
+				nameList = "<pre style='margin-left:250px'><li>" + mar.mar[15].folder1.subfolder1[I] + "</li>";
 				document.getElementById("output").innerHTML += nameList
 			}
 		}
